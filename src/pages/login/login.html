@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>Iniciar sesión</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form text-center>
+    <ion-list>
+      <ion-item class="formInput">
+        <ion-label fixed>Correo: </ion-label>
+        <ion-input required type="text" placeholder="Escribe tu correo"></ion-input>
+      </ion-item>
+      <ion-item class="formInput">
+        <ion-label fixed>Contraseña: </ion-label>
+        <ion-input required type="password" placeholder="Escribe tu contraseña"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button type="submit" (click)="goToHome()">
+      Iniciar sesión
+    </button>
+
+  </form>
+</ion-content>

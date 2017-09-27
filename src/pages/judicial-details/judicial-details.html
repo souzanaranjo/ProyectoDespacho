@@ -1,0 +1,23 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>Detalles de caso</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+  <ion-card>
+    <ion-card-title>ID: {{ id }}</ion-card-title>
+    <ion-card-content text-left>
+      <p>Nombre: {{ caseName }}</p>
+      <p>Descripcion: {{ description }}</p>
+      <p>Fecha de creación : {{ date }}</p>
+      <p>Estatus : {{ status }}</p>
+    </ion-card-content>
+  </ion-card>
+  <button color="danger" ion-button (click)="onClose()">Close</button>
+  <button ion-button>
+    <ion-icon name="camera"></ion-icon>
+  </button>
+</ion-content>
