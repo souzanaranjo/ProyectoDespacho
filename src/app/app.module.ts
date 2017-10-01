@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import {LoginPage} from "../pages/login/login";
 import {LawyersHomePage} from "../pages/lawyers-home/lawyers-home";
 import {JudicialDetailsPage} from "../pages/judicial-details/judicial-details";
+import {TabsPage} from "../pages/tabs/tabs";
 
 @NgModule({
   declarations: [
     MyApp,
       LoginPage,
       LawyersHomePage,
-      JudicialDetailsPage
+      JudicialDetailsPage,
+      TabsPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import {JudicialDetailsPage} from "../pages/judicial-details/judicial-details";
     MyApp,
       LoginPage,
       LawyersHomePage,
-      JudicialDetailsPage
+      JudicialDetailsPage,
+      TabsPage
   ],
   providers: [
     StatusBar,

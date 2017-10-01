@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {LawyersHomePage} from "../lawyers-home/lawyers-home";
+import {TabsPage} from "../tabs/tabs";
 
 
 @IonicPage()
@@ -14,7 +14,7 @@ export class LoginPage {
   }
 
   goToHome() {
-    this.navCtrl.setRoot(LawyersHomePage);
+    this.navCtrl.setRoot(TabsPage);
   }
 
 

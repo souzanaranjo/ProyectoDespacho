@@ -1,14 +1,14 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title text-center>Casos judiciales</ion-title>
+    <ion-title text-center>Buscar expedientes</ion-title>
   </ion-navbar>
-
 </ion-header>
+
 <ion-content padding>
-  <ion-row text-center>
+  <ion-row id="marginbuscar" text-center>
     <ion-col col-10>
-      <ion-input type="text" placeholder="Buscar caso"></ion-input>
+      <ion-input type="text" placeholder="Número de crédito"></ion-input>
     </ion-col>
     <ion-col col-2>
       <button ion-button>
@@ -16,10 +16,14 @@
       </button>
     </ion-col>
   </ion-row>
-  <ion-list>
-    <ion-item *ngFor="let caso of misCasos" (click)="onViewCase(caso)">
+  <!--<ion-list>
+   <ion-item *ngFor="let caso of misCasos" (click)="onViewCase(caso)">
       <p> Caso: {{ caso.name }} </p>
       <p> Fecha de creacion: {{ caso.date }}</p>
     </ion-item>
-  </ion-list>
+  </ion-list>-->
+
+  <form>
+
+  </form>
 </ion-content>
