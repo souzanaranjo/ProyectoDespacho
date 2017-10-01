@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { LawyersHomePage } from "../lawyers-home/lawyers-home";
+import {OfflineDocumentsPage} from "../offline-documents/offline-documents";
 
 @Component({
     selector: 'page-tabs',
@@ -8,5 +9,5 @@ import { LawyersHomePage } from "../lawyers-home/lawyers-home";
 })
 export class TabsPage {
     slPage = LawyersHomePage;
-    docPage = LawyersHomePage;
+    docPage = OfflineDocumentsPage;
 }

@@ -9,6 +9,7 @@ import {LoginPage} from "../pages/login/login";
 import {LawyersHomePage} from "../pages/lawyers-home/lawyers-home";
 import {JudicialDetailsPage} from "../pages/judicial-details/judicial-details";
 import {TabsPage} from "../pages/tabs/tabs";
+import {OfflineDocumentsPage} from "../pages/offline-documents/offline-documents";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {TabsPage} from "../pages/tabs/tabs";
       LoginPage,
       LawyersHomePage,
       JudicialDetailsPage,
-      TabsPage
+      TabsPage,
+      OfflineDocumentsPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import {TabsPage} from "../pages/tabs/tabs";
       LoginPage,
       LawyersHomePage,
       JudicialDetailsPage,
-      TabsPage
+      TabsPage,
+      OfflineDocumentsPage
   ],
   providers: [
     StatusBar,
