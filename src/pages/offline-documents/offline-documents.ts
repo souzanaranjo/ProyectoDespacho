@@ -1,25 +1,29 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, OnInit } from '@angular/core';
+import { NavController, NavParams, ModalController, Modal } from 'ionic-angular';
+import judicialCase from "../../data/judicialCase";
+import {JudicialCase} from "../../data/judicialCase.interface";
+import {JudicialDetailsPage} from "../judicial-details/judicial-details";
 
-/**
- * Generated class for the OfflineDocumentsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
-@IonicPage()
+
 @Component({
   selector: 'page-offline-documents',
   templateUrl: 'offline-documents.html',
 })
 export class OfflineDocumentsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad OfflineDocumentsPage');
-  }
+    misCasos: {id: string, name: string, date: string, description: string, status: string }[];
 
+
+    ngOnInit() {
+        this.misCasos = judicialCase;
+    }
+
+    onViewCase(judicialCase: JudicialCase) {
+        const modal = this.modalCtrl.create(JudicialDetailsPage, judicialCase);
+        modal.present();
+    }
 }
