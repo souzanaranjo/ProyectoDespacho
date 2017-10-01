@@ -1,6 +1,7 @@
 node_modules
 www
 .idea
+.sourcemaps
 .temp
 .sass-cache
 <%= appPath %>/bower_components
