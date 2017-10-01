@@ -13,7 +13,7 @@ plugins
 *.DS_Store
 
 app/scripts/configuration.jsnode_modules
-www
+www/
 .idea
 .temp
 .sass-cache
