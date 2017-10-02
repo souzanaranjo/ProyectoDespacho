@@ -3,7 +3,7 @@ import { NavController, NavParams, ModalController, Modal } from 'ionic-angular'
 import judicialCase from "../../data/judicialCase";
 import {JudicialCase} from "../../data/judicialCase.interface";
 import {JudicialDetailsPage} from "../judicial-details/judicial-details";
-
+import { addOfflineDocPage } from '../add-offline-document/add_offline_doc';
 
 
 @Component({
@@ -11,6 +11,8 @@ import {JudicialDetailsPage} from "../judicial-details/judicial-details";
   templateUrl: 'offline-documents.html',
 })
 export class OfflineDocumentsPage {
+
+   addOfflineDoc =  addOfflineDocPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
