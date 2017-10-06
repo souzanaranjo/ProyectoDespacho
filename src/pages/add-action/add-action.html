@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Agregar Acción</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-title text-center>Detalles</ion-card-title>
+    <ion-card-content text-left>
+      <p><b>Cuenta:</b> {{ cuenta }}</p>
+      <p><b>Expediente:</b> {{ expediente }}</p>
+      <p><b>Colonia:</b> {{ colonia }}</p>
+      <p><b>Dirección:</b> {{ direccion }}</p>
+      <p><b>Acreditado:</b> {{ acreditado }} </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card-title text-center>Agregar Acción</ion-card-title>
+  <button ion-button icon-right full>
+    Agregar Fotografia <ion-icon name="camera"></ion-icon>
+  </button>
+  <form text-center>
+    <ion-list>
+      <ion-item class="formInput">
+        <ion-label>Acción</ion-label>
+        <ion-select required>
+          <ion-option value="A">Accion1</ion-option>
+          <ion-option value="B">Accion2</ion-option>
+          <ion-option value="C">Accion3</ion-option>
+          <ion-option value="D">Accion4</ion-option>
+          <ion-option value="E">Accion5</ion-option>
+          <ion-option value="F">Accion6</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="formInput">
+        <ion-label fixed>Celular</ion-label>
+        <ion-input required type="tel"></ion-input>
+      </ion-item>
+      <ion-item class="formInput">
+        <ion-label fixed>Comentario</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item class="formInput">
+        <ion-label fixed>Email</ion-label>
+        <ion-input required type="email"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button full color='danger'>
+      Agregar Acción
+    </button>
+  </form>
+</ion-content>
